@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Inscription </title>
+    <link href="../style.css" rel="stylesheet">
+</head>
+<body>
+    <header class="bannerH">
+        <h1> Page des inscirpitions </h1>
+        <a class="butautres" href="../acceuil.html"> Retour à l'acceuil </a>
+        <a class="butinscri" href="ADH/adhérence.html"> Adhérée </a>
+    </header>
+   
+
+    <form method="get" action="valid">
+    <fieldset> 
+        <legend>Vos coordonnées</legend> 
+        <label for="nom">Quel est votre nom ?</label>
+        <input type="text" name="nom" id="nom" required>
+        <label for="prenom">Quel est votre prénom ?</label>
+        <input type="text" name="prenom" id="prenom" required>
+        <label for="email">Quel est votre e-mail ?</label>
+        <input type="email" name="email" id="email" required>
+        
+        <legend>Votre Identité</legend> 
+        <p>
+           Faites un souhait que vous voudriez voir exaucé :
+           <input type="radio" name="sexe" value="maculin" id="mascu"> 
+           <label for="mascu">Masculin</label>
+           <input type="radio" name="sexe" value="femme" id="femme"> 
+           <label for="femme">Feminin</label>
+           <input type="radio" name="sexe" value="autres" id="autres"> 
+           <label for="autres">Autres...</label>
+        </p>
+        <p>
+           <label for="inforplus">Si vous souhaitez préciser des informations:</label>
+           <textarea name="inforplus" id="inforplus" cols="40" rows="4"></textarea>
+        </p>
+        <legend >Localisation</legend>
+        <p>
+            Cochez le pays dans lequel vous vivez actuellement :<br>
+            <input type="checkbox" name="fr" id="fr" > 
+            <label for="fr">France</label><br>
+            <input type="checkbox" name="it" id="it" > 
+            <label for="it">Italie</label><br>
+            <input type="checkbox" name="esp" id="esp"> 
+            <label for="esp">Espagne</label><br>
+            <input type="checkbox" name="por" id="por"> 
+            <label for="por">Portugal</label>
+            <br> <br>
+        </p>
+        <input class="valid" type="submit" value="Valider">
+     </fieldset>
+     </form>
+   
+    
+</body>
+</html>
